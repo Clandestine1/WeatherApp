@@ -1,0 +1,112 @@
+body {
+	margin: 0;
+}
+
+#background {
+	width: 100%;
+	position: relative;
+	z-index: -4;
+}
+
+#forecast {
+	position: absolute;
+	top: 30%;
+	left: 20%;
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 40px;
+	font-weight: bolder;
+	text-shadow: 2px 3px hotpink;
+}
+
+#weather {
+	position: absolute;
+	top: 60%;
+	left: 12%;
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 40px;
+	font-weight: bolder;
+	text-shadow: 2px 3px hotpink;
+}
+
+#low {
+	position: absolute;
+	top: 40%;
+	left: 22%;
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 40px;
+	font-weight: bolder;
+	text-shadow: 2px 3px hotpink;
+}
+
+#high {
+	position: absolute;
+	top: 50%;
+	left: 22%;
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 40px;
+	font-weight: bolder;
+	text-shadow: 2px 3px hotpink;
+}
+
+#name {
+	position: absolute;
+	top: 80%;
+	left: 21%;
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 40px;
+	font-weight: bolder;
+	text-shadow: 2px 3px hotpink;
+}
+
+button {
+	position: absolute;
+	background-color: #5D4B5C;
+    border: 5% black;
+    border-radius: 7px;
+    color: #EEDAEC;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-size: 24px;
+    text-decoration: none;
+  	padding: 2px 44px 2px 44px;
+  	box-shadow: 3px 3px 2px black;
+  	border: none;
+  	left: 96%;
+  	font-weight: bolder;
+}
+
+input {
+    border: 5px solid  #5D4B5C; 
+    background-color: #EEDAEC;
+    margin: 10 0 10px 0;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 84%;
+    margin-top: 80%;
+}
+
+h1 {
+	position: absolute;
+	left: 12%;
+	font-family: 'Rubik Mono One', sans-serif;
+	color: lightpink;
+	font-size: 60px;
+	font-weight: bolder;
+	opacity: .4;
+	animation: Colors 6s infinite alternate;
+}
+
+@keyframes Colors {
+  0% {color: black; }
+  10% {color: aqua;}
+  20% {color: deeppink;}
+  30% {color: purple;}
+  40% {color: orange;}
+  50% {color: yellow;}
+  60% {color: lightblue;}
+  70% {color: lightgreen;}
+  80% {color: red;}
+  90% {color: hotpink;}
+  100% {color: mediumpurple;}
+}
