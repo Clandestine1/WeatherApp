@@ -18,7 +18,7 @@ $(function() {
              console.log(res.weather[0].description);
              $('#zipCodeInput').val("");
 
-         if (converse(res.main.temp) < 40) {
+         /*if (converse(res.main.temp) < 70) {
             document.getElementById('#forecast').innerHTML = converse(res.main.temp);
             document.getElementById('#forecast').style.color = 'blue';
         } 
@@ -27,7 +27,7 @@ $(function() {
             document.getElementById('#forecast').style.color = 'red';
         }  else {     
         document.getElementById('#forecast').innerHTML = converse(res.main.temp);
-        }
+        }*/
          })
          function converse(k) {
             let fa;
