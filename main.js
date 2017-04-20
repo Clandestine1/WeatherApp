@@ -7,9 +7,9 @@ $(function() {
          $.ajax('http://api.openweathermap.org/data/2.5/weather?q=' + enterZipCode + ',us?units=metric&appid=3cbb855ff80db1ef4bd92862e862fa9f')
          .done(function(res){
              $('#name').html('City name is...' + res.name);
-             $('#low').html('Low temp is...' + converse(res.main.temp_min));
-             $('#high').html('High temp is...' + converse(res.main.temp_max));
-             $('#forecast').html('Average temp is...' + converse(res.main.temp));
+             $('#low').html('Low temp is...' + converse(res.main.temp_min) + '°F');
+             $('#high').html('High temp is...' + converse(res.main.temp_max) + '°F');
+             $('#forecast').html('Average temp is...' + converse(res.main.temp) + '°F');
              $('#weather').html('Weather description is...' +res.weather[0].description);
              console.log(res.main.temp);
              console.log(res.name);
