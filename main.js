@@ -4,7 +4,7 @@ $(function() {
     $('#submit').on('click',function(){
          let enterZipCode = $('#zipCodeInput').val()
          console.log(enterZipCode);
-         $.ajax('http://api.openweathermap.org/data/2.5/weather?q=' + enterZipCode + ',us?units=imperial&appid=3cbb855ff80db1ef4bd92862e862fa9f')
+         $.ajax('http://api.openweathermap.org/data/2.5/weather?q=' + enterZipCode + ',us?units=metric&appid=3cbb855ff80db1ef4bd92862e862fa9f')
          .done(function(res){
              $('#name').html('City name is...' + res.name);
              $('#low').html('Low temp is...' + converse(res.main.temp_min));
@@ -18,7 +18,7 @@ $(function() {
              console.log(res.weather[0].description);
              $('#zipCodeInput').val("");
 
-         /*if (converse(res.main.temp) < 70) {
+         /*if (converse(res.main.temp) < 40) {
             document.getElementById('#forecast').innerHTML = converse(res.main.temp);
             document.getElementById('#forecast').style.color = 'blue';
         } 
